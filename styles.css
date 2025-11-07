@@ -42,11 +42,13 @@ svg {
   --color3: 100, 220, 255;
   --color4: 200, 50, 50;
   --color5: 180, 180, 50;
+  --color6: 255, 196, 0;
   --color-interactive: 140, 100, 255;
   --circle-size: 80%;
   --blending: hard-light;
 }
 
+/*BLOB CODE*/
 @keyframes moveInCircle {
   0% {
     transform: rotate(0deg);
@@ -107,15 +109,15 @@ svg {
     background: radial-gradient(
         circle at center,
         rgba(var(--color1), 0.8) 0,
-        rgba(var(--color1), 0) 40%
+        rgba(var(--color1), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - var(--circle-size) / 2 - 260px);
+    left: calc(50% - var(--circle-size) / 2 - 520px);
 
     transform-origin: center center;
     animation: moveVertical 30s ease infinite;
@@ -128,17 +130,17 @@ svg {
     background: radial-gradient(
         circle at center,
         rgba(var(--color2), 0.8) 0,
-        rgba(var(--color2), 0) 40%
+        rgba(var(--color2), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - var(--circle-size) / 2 + 320px);
+    left: calc(50% - var(--circle-size) / 2 - 260px);
 
-    transform-origin: calc(50% - 400px);
+    transform-origin: center center;
     animation: moveInCircle 20s reverse infinite;
 
     opacity: 1;
@@ -149,17 +151,17 @@ svg {
     background: radial-gradient(
         circle at center,
         rgba(var(--color3), 0.8) 0,
-        rgba(var(--color3), 0) 40%
+        rgba(var(--color3), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2 + 200px);
-    left: calc(50% - var(--circle-size) / 2 -500px);
+    top: calc(50% - var(--circle-size) / 2 + 140px);
+    left: calc(50% - var(--circle-size) / 2 + 450px);
 
-    transform-origin: calc(50% + 400px);
+    transform-origin: center center;
     animation: moveInCircle 40s linear infinite;
 
     opacity: 1;
@@ -170,17 +172,17 @@ svg {
     background: radial-gradient(
         circle at center,
         rgba(var(--color4), 0.8) 0,
-        rgba(var(--color4), 0) 40%
+        rgba(var(--color4), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - var(--circle-size) / 2 + 360px);
+    left: calc(50% - var(--circle-size) / 2 + 320px);
 
-    transform-origin: calc(50% - 200px);
+    transform-origin: center center;
     animation: moveHorizontal 40s ease infinite;
 
     opacity: 0.7;
@@ -191,20 +193,107 @@ svg {
     background: radial-gradient(
         circle at center,
         rgba(var(--color5), 0.8) 0,
-        rgba(var(--color5), 0) 40%
+        rgba(var(--color5), 0) 50%
       )
       no-repeat;
     mix-blend-mode: var(--blending);
 
     width: var(--circle-size);
     height: var(--circle-size);
-    top: calc(50% - var(--circle-size) / 2);
-    left: calc(50% - var(--circle-size) / 2);
+    top: calc(50% - var(--circle-size) / 2 + 220px);
+    left: calc(50% - var(--circle-size) / 2 + 200px);
 
-    transform-origin: calc(50% - 800px) calc(50% + 200px);
+    transform-origin: calc(50% - 320px) calc(50% + 200px);
     animation: moveInCircle 20s ease infinite;
 
     opacity: 1;
+  }
+
+  .g6 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color6), 0.8) 0,
+        rgba(var(--color6), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: var(--circle-size);
+    height: var(--circle-size);
+    top: calc(50% - var(--circle-size) / 2 - 140px);
+    left: calc(50% - var(--circle-size) / 2 + 640px);
+
+    transform-origin: calc(50% + 520px) calc(50% - 80px);
+    animation: moveVertical 15s ease infinite;
+
+    opacity: 1;
+  }
+
+  .g7 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color3), 0.85) 0,
+        rgba(var(--color3), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: 60%;
+    height: 60%;
+    top: calc(50% - var(--circle-size) / 2 - 20px);
+    left: calc(50% - var(--circle-size) / 2 - 140px);
+
+    transform-origin: center center;
+    animation: moveInCircle 25s ease-in-out infinite;
+    animation-delay: 3s;
+
+    opacity: 0.85;
+  }
+
+  .g8 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color4), 0.75) 0,
+        rgba(var(--color4), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: 50%;
+    height: 50%;
+    top: calc(50% - var(--circle-size) / 2 + 520px);
+    left: calc(50% - var(--circle-size) / 2 - 40px);
+
+    transform-origin: center center;
+    animation: moveHorizontal 30s ease-in-out infinite;
+    animation-delay: 1s;
+
+    opacity: 0.6;
+  }
+
+  .g9 {
+    position: absolute;
+    background: radial-gradient(
+        circle at center,
+        rgba(var(--color2), 0.9) 0,
+        rgba(var(--color2), 0) 50%
+      )
+      no-repeat;
+    mix-blend-mode: var(--blending);
+
+    width: 70%;
+    height: 70%;
+    top: calc(50% - var(--circle-size) / 2 - 320px);
+    left: calc(50% - var(--circle-size) / 2 + 120px);
+
+    transform-origin: center center;
+    animation: moveVertical 22s linear infinite;
+    animation-delay: 5s;
+
+    opacity: 0.9;
   }
 
   .interactive {
