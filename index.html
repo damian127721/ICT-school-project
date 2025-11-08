@@ -1,45 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1 class="text-container">Moje studium</h1>
-    <div class="gradient-bg">
-      <svg xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <filter id="goo">
-            <feGaussianBlur
-              in="SourceGraphic"
-              stdDeviation="10"
-              result="blur"
-            />
-            <feColorMatrix
-              in="blur"
-              mode="matrix"
-              values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8"
-              result="goo"
-            />
-            <feBlend in="SourceGraphic" in2="goo" />
-          </filter>
-        </defs>
-      </svg>
-      <div class="gradients-container">
-        <div class="g1"></div>
-        <div class="g2"></div>
-        <div class="g3"></div>
-        <div class="g4"></div>
-        <div class="g5"></div>
-        <div class="g6"></div>
-        <div class="g7"></div>
-        <div class="g8"></div>
-        <div class="g9"></div>
-        <div class="interactive"></div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1 class="text-container">Moje studium</h1>
+  <nav class="glass">
+    <ul>
+      <li><a href="index.html">Úvodní stránka</a></li>
+      <li><a href="osobni-profil.html">Osobní profil</a></li>
+      <li><a href="projekty.html">Projekty</a></li>
+    </ul>
+  </nav>
+  <div class="gradient-bg">
+    <svg xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="goo">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+          <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+          <feBlend in="SourceGraphic" in2="goo" />
+        </filter>
+      </defs>
+    </svg>
+    <div class="gradients-container">
+      <div class="g1"></div>
+      <div class="g2"></div>
+      <div class="g3"></div>
+      <div class="g4"></div>
+      <div class="g5"></div>
+      <div class="g6"></div>
+      <div class="g7"></div>
+      <div class="g8"></div>
+      <div class="g9"></div>
+      <div class="interactive"></div>
     </div>
-    <script src="./script.js"></script>
-  </body>
+  </div>
+  <section class="section--first glass">
+    <article>
+      <h3>
+        Úvod do programování
+      </h3>
+      <strong>Kredity: 6</strong>
+      <h4>Zápočet</h4>
+      <p>Studenti vypracují úlohy, které se vážou na témata jednotlivých tutoriálů. Posluchači
+        vypracují zadaný projekt. Posluchači absolvují závěrečný test. Po splnění těchto požadavků
+        studenti získávají zápočet.</p>
+      <p>Minimální počet bodů pro získání klasifikovaného zápočtu je 51 (ze 100 možných). Body lze získat z
+        následujících úloh (musíte splnit všechna minima):</p>
+      <ul>
+        <li>55 bodů (min 28) - odevzdání domácích úloh</li>
+        <li>30 bodů (min 15) - projekt</li>
+        <li>15 bodů (min 6) - závěrečný test</li>
+      </ul>
+    </article>
+    <article>
+      <h3>
+        Úvod do logického myšlení
+      </h3>
+      <strong>Kredity: 6</strong>
+      <h4>Zápočet</h4>
+      <p>Absolvování zápočtové písemky a online testů s minimálním ziskem 21 bodů a splnění minim
+        jednotlivých testů/písemky</p>
+      <h4>Zkouška</h4>
+      <p>Písemný test</p>
+    </article>
+    <article>
+      <h3>
+        Základy digitálních systémů
+      </h3>
+      <strong>Kredity: 5</strong>
+      <h4>Zápočet</h4>
+      <p>Během semestru studenti vypracují 2 samostatné práce. Jejich celé znění včetně konkrétního
+        zadání je v Moodlu http://lms.vsb.cz /. (U 1. SP stačí u všech 5 B. fcí vyjádřit minimální tvar
+        pomocí K.M. a nakreslit realizaci pomocí hradel NAND, odevzdává se na tutoriálu. Druhá SP
+        se odevzdává přímo v Moodlu). Každá samostatná práce je hodnocena nejvýše 10 body. Dále
+        studenti v průběhu tutoriálu píšou 4 testy, každý je max. po 8 bodech. Celkem tedy za cvičení
+        mohou studenti získat 52 bodů. Body se zapisují do Moodlu. Do IS EdISoN se přenese
+        celkový součet – nejvýše ovšem 44 bodů (odpadá možnost náhradních termínů testů).</p>
+    </article>
+    <article>
+      <h3>
+        Lineární algebra
+      </h3>
+      <strong>Kredity: 4</strong>
+      <h4>Zápočet</h4>
+      <p>Zápočet bude udělen za včasné odevzdání správně vyřešeného domácího úkolu a absolvování
+        písemného testu. Celkově je nutné získat pro udělení zápočtu 10 bodů. Za domácí úkol lze
+        získat 10 bodů a test může být ohodnocen až 20 body. </p>
+      <h4>Zkouška</h4>
+      <p>Zkouška se skládá z části teoretické i praktické. Obě části zkoušky proběhnou písemnou
+        formou. Zkouška může být ohodnocena až 70 body. </p>
+    </article>
+    <article>
+      <h3>
+        Základy informačních technologií
+      </h3>
+      <strong>Kredity: 3</strong>
+      <h4>Zápočet</h4>
+      <p>Realizace a odevzdání projektu dle specifikace na 1. tutoriálu, projekt odevzdán na
+        posledním tutoriálu.</p>
+    </article>
+    <article>
+      <h3>
+        Právo v ICT
+      </h3>
+      <strong>Kredity: 2</strong>
+      <h4>Zápočet</h4>
+      <p>Neuvedeno</p>
+    </article>
+    <article>
+      <h3>
+        Anglický jazyk
+      </h3>
+      <strong>Kredity: 2</strong>
+      <h4>Zápočet</h4>
+      <p>Vyplnění úkolu v LMS a závěrečný test.</p>
+    </article>
+  </section>
+  </section>
+  <script src="./script.js"></script>
+</body>
+
 </html>
