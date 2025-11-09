@@ -22,3 +22,28 @@ window.addEventListener("mousemove", (event) => {
   tgX = event.clientX;
   tgY = event.clientY;
 });
+
+let previousSelectedTab = document.querySelector(".tab.pressed");
+if (previousSelectedTab) {
+  const currentTabArticle = document.getElementById(
+    previousSelectedTab.getAttribute("data-tab")
+  );
+  currentTabArticle.style.display = "flex";
+}
+
+const tabs = document.querySelectorAll(".tab");
+tabs.forEach((tab) =>
+  tab.addEventListener("click", () => {
+    previousSelectedTab.classList.remove("pressed");
+    tab.classList.add("pressed");
+    const currentTabArticle = document.getElementById(
+      tab.getAttribute("data-tab")
+    );
+    const previousTabArticle = document.getElementById(
+      previousSelectedTab.getAttribute("data-tab")
+    );
+    previousTabArticle.style.display = "none";
+    currentTabArticle.style.display = "flex";
+    previousSelectedTab = tab;
+  })
+);
