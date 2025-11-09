@@ -470,6 +470,14 @@ li {
   grid-template-columns: repeat(1, 1fr);
 }
 
+.profile-text,
+.profile-text li {
+  font-size: large;
+  line-height: 1.4rem;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
 .info-image {
   margin: auto;
   border-radius: 50%;
